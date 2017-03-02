@@ -9,8 +9,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 
 public class AdnagaAdmob implements IPlugin {
-    private static final String LOG_TAG = "Adnaga";
-    private static AdnagaAdmob _instance;
+    private static final String LOG_TAG = "Adnaga-Admob";
 
     private com.google.android.gms.ads.InterstitialAd _admobInterstitialAd;
     private Adnaga _adnaga;
@@ -21,6 +20,7 @@ public class AdnagaAdmob implements IPlugin {
 
     public void init(String pid, Adnaga adnaga) {
         _adnaga = adnaga;
+        Log.i(LOG_TAG, "admaga-admob inited");
     }
 
     public void loadAds(final String pid) {
