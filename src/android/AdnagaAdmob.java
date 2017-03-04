@@ -54,6 +54,14 @@ public class AdnagaAdmob implements IPlugin {
         });
     }
 
+    public void onPause() {
+
+    }
+
+    public void onResume() {
+
+    }
+
     private class AdmobAdListener extends AdListener {
         @Override
         public void onAdClosed() {
